@@ -1,0 +1,49 @@
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    margin-top: 8%;
+
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  input {
+    flex: 2;
+    padding: 8px;
+    width:90%;
+  }
+
+  .p-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .register-link {
+    margin-top: 1rem; 
+    text-align: center;
+     }
+
+   .forgot{
+    margin-top: 1rem; 
+    text-align: center;
+   }  
+    
+    p {
+      margin: 0; }
+      a {
+        color: #007bff; 
+        text-decoration: none;
+        text-decoration :underline}

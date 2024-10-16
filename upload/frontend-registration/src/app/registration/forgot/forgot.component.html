@@ -1,0 +1,21 @@
+<div class="forgotpass">
+    <div class="forgotcontainer">
+        <div class="title">
+            Forgot Password
+        </div>
+        <br>
+        <form [formGroup]="forgotpassform">
+            
+            <div class="usermail">
+                <label for="useremail">EMAIL</label>
+                <input type="text" id="useremail" pInputText formControlName="email" placeholder="Enter Email"/>
+                <p-message *ngIf="forgotpassform.get('email')?.invalid && forgotpassform.get('email')?.touched" class="emailerror">
+                    * Email is required and should follow the format.
+                </p-message>
+            </div>
+            <div class="submitbtn">
+                <button pButton (click)="submitForm()">Next</button>
+            </div>
+        </form>
+    </div>
+</div>

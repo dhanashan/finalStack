@@ -1,0 +1,27 @@
+<p-card header="Login" class="log">
+    <form [formGroup]="signinform">
+      <div class="p-field">
+        <label for="email">Email:</label>
+        <input id="email" type="email" class="form-group" pInputText formControlName="email"/>
+        <p-message *ngIf="signinform.controls['email'].invalid && signinform.controls['email'].touched" severity="error" text="Valid email is required"></p-message>
+      </div>
+      <br>
+      <div class="p-field">
+        <label for="password">Password:</label>
+        <input id="password" type="password" class="form-group" pPassword formControlName="password"/>
+        <p-message *ngIf="signinform.controls['password'].invalid && signinform.controls['password'].touched" severity="error" text="Password is required"></p-message>
+      </div>
+      <br>
+      <div class="forgot">
+        <a routerLink="../forgotpass">Forgot Password ?</a>
+    </div>
+      <br>
+      <button pButton type="submit" label="Login" [disabled]="signinform.invalid" (click)="submitForm()"></button>
+       <br> 
+      <div class="register-link">
+        <p>Don't have an account? <a routerLink="/registration/signup">Register here</a></p>
+      </div>
+
+    </form>
+  </p-card>
+
